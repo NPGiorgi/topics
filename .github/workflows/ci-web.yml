@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "topics/web/**"
+      - "web/**"
 
 defaults:
   run:
