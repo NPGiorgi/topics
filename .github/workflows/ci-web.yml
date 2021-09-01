@@ -42,7 +42,6 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    working-directory: ./web
     steps:
       - uses: actions/checkout@v2
       - uses: amondnet/vercel-action@v20
@@ -50,3 +49,5 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.ORG_ID}}
           vercel-project-id: ${{ secrets.PROJECT_ID}}
+          working-directory: ./web
+
