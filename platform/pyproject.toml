@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "platform"
+version = "0.1.0"
+description = "Platform microservice"
+authors = ["g4"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.68.1"
+uvicorn = "^0.15.0"
+alembic = "^1.7.1"
+psycopg2-binary = "^2.9.1"
+
+[tool.poetry.dev-dependencies]
+black = "^21.8b0"
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
