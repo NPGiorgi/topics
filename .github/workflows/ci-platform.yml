@@ -1,4 +1,4 @@
-name: Test react app
+name: Test Platform App
 
 on:
   push:
@@ -17,6 +17,12 @@ jobs:
     strategy:
       matrix:
         python-version: [3.8]
+
+    services:
+      postgres:
+        image: postgres
+        env:
+          POSTGRES_PASSWORD: cantguessthis
 
     steps:
       - uses: actions/checkout@v2
