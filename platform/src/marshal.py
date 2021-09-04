@@ -38,6 +38,6 @@ class CreateAgentPayload(RequestModel):
 
 
 class CreateAgentResponse(RequestModel):
-    id: str
+    id: int
     name: str
     secret_name: str
