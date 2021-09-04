@@ -25,3 +25,5 @@ yarn-error.log*
 .vercel
 .idea
 **/__pycache__/**
+.coverage
+**/reports/*

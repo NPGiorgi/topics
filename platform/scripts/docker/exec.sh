@@ -1,3 +1,4 @@
 #!/bin/bash
 
-docker build . -t platform:local
+# logs in into platform container
+docker exec -it platform /bin/bash
