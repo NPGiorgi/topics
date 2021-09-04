@@ -46,7 +46,7 @@ To make it dev only pass the `-D` flag:
 $ poetry add -D dependency-name
 ```
 
-## Install Postgres Database
+# Install Postgres Database
 
 To run Postgres we will use Docker, so make sure it's installed.
 Run the following commands in order to have Postgres running on you system
