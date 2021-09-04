@@ -22,7 +22,10 @@ jobs:
       postgres:
         image: postgres
         env:
+          POSTGRES_USER: postgres
           POSTGRES_PASSWORD: cantguessthis
+        ports:
+          - 5432:5432
 
     steps:
       - uses: actions/checkout@v2
