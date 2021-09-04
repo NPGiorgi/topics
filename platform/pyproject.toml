@@ -2,7 +2,7 @@
 name = "platform"
 version = "0.1.0"
 description = "Platform microservice"
-authors = ["g4"]
+authors = ["g3"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -16,6 +16,8 @@ SQLAlchemy = "^1.4.23"
 black = "^21.8b0"
 pytest = "^6.2.5"
 SQLAlchemy-Utils = "^0.37.8"
+coverage = "^5.5"
+pytest-cov = "^2.12.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
