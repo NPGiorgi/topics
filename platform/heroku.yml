@@ -5,4 +5,5 @@ build:
 setup:
   addons:
   - plan: heroku-postgresql
-    as: DATABASE
+
+release: alembic upgrade head

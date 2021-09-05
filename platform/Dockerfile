@@ -18,8 +18,5 @@ RUN poetry config virtualenvs.create false
 # install dependencies
 RUN poetry install
 
-# set environment
-ENV PYTHONPATH=/home/app
-
 # execute project
 CMD gunicorn src.main:app
