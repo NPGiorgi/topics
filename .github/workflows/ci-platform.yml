@@ -54,4 +54,5 @@ jobs:
         heroku_app_name: "platform-g3-topics"
         heroku_email: ${{secrets.HEROKU_EMAIL}}
         stack: "container"
+        appdir: "./platform"
 
