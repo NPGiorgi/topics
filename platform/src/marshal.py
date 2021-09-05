@@ -29,7 +29,7 @@ class CreateAgentPayload(RequestModel):
     secret_name: str
 
 
-class CreateAgentResponse(ResponseModel):
+class AgentResponse(ResponseModel):
     id: int
     name: str
     secret_name: str
