@@ -24,7 +24,6 @@ class ResponseModel(RequestModel):
 
 
 class CreateAgentPayload(RequestModel):
-    id: Optional[str]
     name: str
     secret_name: str
 
