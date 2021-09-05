@@ -6,4 +6,7 @@ setup:
   addons:
   - plan: heroku-postgresql
 
-release: "alembic upgrade head"
+release:
+  command:
+    - "alembic upgrade head"
+
