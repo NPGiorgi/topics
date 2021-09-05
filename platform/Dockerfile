@@ -6,7 +6,7 @@ RUN pip3 install poetry
 
 # copy project files
 COPY ./src ./src
-COPY alembic .
+COPY ./alembic ./alembic
 COPY alembic.ini .
 COPY poetry.lock .
 COPY pyproject.toml .
