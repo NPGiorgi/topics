@@ -12,6 +12,9 @@ COPY poetry.lock .
 COPY pyproject.toml .
 COPY gunicorn.conf.py .
 
+# poetry install everything globally
+RUN poetry config virtualenvs.create false
+
 # install dependencies
 RUN poetry install
 
@@ -19,4 +22,4 @@ RUN poetry install
 ENV PYTHONPATH=/home/app
 
 # execute project
-CMD poetry run gunicorn src.main:app
+CMD gunicorn src.main:app
