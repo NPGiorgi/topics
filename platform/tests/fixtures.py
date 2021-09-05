@@ -15,7 +15,7 @@ from src.main import app
 def run_migrations():
     base_dir = Path(__file__).parent.parent
     alembic_cfg = Config(str(base_dir / "alembic.ini"))
-    alembic_cfg.set_main_option("sqlalchemy.url", settings.DB_CONNECTION_URL)
+    alembic_cfg.set_main_option("sqlalchemy.url", settings.DATABASE_URL)
     alembic_cfg.set_main_option("script_location", str(base_dir / "alembic"))
     command.upgrade(alembic_cfg, "head")
 
@@ -28,12 +28,12 @@ def client():
 
 @pytest.fixture
 def db():
-    assert not database_exists(settings.DB_CONNECTION_URL)
-    create_database(settings.DB_CONNECTION_URL)
+    assert not database_exists(settings.DATABASE_URL)
+    create_database(settings.DATABASE_URL)
     run_migrations()
 
-    engine = create_engine(settings.DB_CONNECTION_URL)
+    engine = create_engine(settings.DATABASE_URL)
     with Session(engine) as session:
         yield session
 
-    drop_database(settings.DB_CONNECTION_URL)
+    drop_database(settings.DATABASE_URL)

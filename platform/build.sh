@@ -7,7 +7,7 @@ poetry install
 if [[ -z "${CI}" ]]; then
   poetry run black .
   if ! test -f ".env"; then
-    echo "DB_CONNECTION_URL=postgresql+psycopg2://postgres:cantguessthis@127.0.0.1/platform" >> .env
+    echo "DATABASE_URL=postgresql+psycopg2://postgres:cantguessthis@127.0.0.1/platform" >> .env
     echo "Local .env file created."
   fi
 else

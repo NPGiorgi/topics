@@ -1,4 +1,4 @@
-name: Test Platform App
+name: Build and Deploy Platform App
 
 on:
   push:
@@ -53,4 +53,5 @@ jobs:
         heroku_api_key: ${{secrets.HEROKU_API_KEY}}
         heroku_app_name: "platform-xyz:latest"
         heroku_email: ${{secrets.HEROKU_EMAIL}}
-        usedocker: true
+        stack: "container"
+

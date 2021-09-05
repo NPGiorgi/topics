@@ -1,4 +1,4 @@
-name: Test react app
+name: Build and Deploy Web App
 
 on:
   push:

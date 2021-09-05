@@ -6,7 +6,7 @@ from src.marshal import CreateAgentPayload, CreateAgentResponse
 
 
 def create_db_connection():
-    engine = create_engine(settings.DB_CONNECTION_URL)
+    engine = create_engine(settings.DATABASE_URL)
     session = sessionmaker(autocommit=False, autoflush=False, bind=engine)
     return scoped_session(session)
 
