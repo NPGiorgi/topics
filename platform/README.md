@@ -60,7 +60,6 @@ $ docker pull postgres
 
 2 - Create the docker container
 
-
 __Note: Replace {pass} with the desired password, for this project, **FOR LOCAL DEVELOPMENT ONLY**, we will be using the password 'cantguesthis'.__
 
 ```shell
