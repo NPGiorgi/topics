@@ -13,12 +13,12 @@ At the top level of the project we will find the following files:
 
 # Web
 
-Web is a [React](https://github.com/facebook/react) based application. Currently it only contains the starting project created by [`create-react-app`](https://github.com/facebook/create-react-app).
+[Web](./web) is a [React](https://github.com/facebook/react) based application. Currently it only contains the starting project created by [`create-react-app`](https://github.com/facebook/create-react-app).
 For instructions on usage refer to `create-react-app` [docs](https://github.com/facebook/create-react-app#npm-start-or-yarn-start).
 
 # Platform
 
-Platform is a Python based back-end powered by [FastAPI](https://github.com/tiangolo/fastapi). It contains a few example APIs and it requires the usage of a PostgreSQL database. 
+[Platform](./platform) is a Python based back-end powered by [FastAPI](https://github.com/tiangolo/fastapi). It contains a few example APIs and it requires the usage of a PostgreSQL database. 
 
 # Infra
 
