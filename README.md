@@ -20,6 +20,10 @@ For instructions on usage refer to `create-react-app` [docs](https://github.com/
 
 Platform is a Python based back-end powered by [FastAPI](https://github.com/tiangolo/fastapi). It contains a few example APIs and it requires the usage of a PostgreSQL database. 
 
+# Infra
+
+![Infrastructure. Code is hosted in Github, on commit it runs separete workflow for web and platform. After the build is done, it will deploy to Vercel for web, and to Heroku for platform.](./infra.png)
+
 # CI/CD
 
 ## The `.github` folder
@@ -134,4 +138,4 @@ services:
         - 5432:5432
 ```
 
-[Services](https://docs.github.com/es/actions/guides/about-service-containers) are basically just [Docker] containers. So you should be able to use any container you want.
+[Services](https://docs.github.com/es/actions/guides/about-service-containers) are basically just [Docker](https://www.docker.com/) containers. So you should be able to use any container you want.
