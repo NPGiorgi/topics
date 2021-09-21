@@ -133,3 +133,5 @@ services:
       ports:
         - 5432:5432
 ```
+
+[Services](https://docs.github.com/es/actions/guides/about-service-containers) are basically just [Docker] containers. So you should be able to use any container you want.
