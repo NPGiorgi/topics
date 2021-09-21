@@ -7,7 +7,7 @@ from tests.fixtures import db, client
 def test_say_hello(client):
     response = client.get("/agents/hello")
     assert response.status_code == 200
-    assert response.json() == {"Hello": "UCU"}
+    assert response.json() == {"Hello": "World"}
 
 
 def test_get_agents_api(client, db):
