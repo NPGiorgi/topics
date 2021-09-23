@@ -22,7 +22,7 @@ def create_agent_api(agent: CreateAgentPayload) -> AgentResponse:
 
 @api.get("/hello")
 def say_hello_api():
-    return {"Hello": "World"}
+    return {"Hello": "UCU"}
 
 
 @api.get("/{agent_id}")
